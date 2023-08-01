@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextStyled, H1Styled, H2Styled, H3Styled, H4Styled, H5Styled, PStyled, SMALLStyled } from './styles';
 import { TextProps } from 'react-native';
-import { Colors } from "../theme/colors";
+import { Colors } from "../../theme/colors";
 
 interface SubTextProps extends TextProps {
   color?: keyof Colors | string;

@@ -3,7 +3,22 @@ import { Colors } from "./colors";
 
 declare module 'styled-components/native' {
     export interface DefaultTheme {
-        colors: Colors, text: {
+        colors: Colors,
+        view: {
+            backgroundColor: string,
+            animatedColor: string,
+        },
+        toolbar: {
+            color: string,
+            titleColor: string
+        },
+        button: {
+            color: string,
+            textColor: string,
+            disabledColor: string,
+            disabledTextColor: string
+        },
+        text: {
             defaultColor: string,
             defaultFont: string,
             defaultFontWeight: string,

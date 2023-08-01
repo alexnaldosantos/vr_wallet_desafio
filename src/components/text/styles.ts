@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { Colors } from "../theme/colors";
+import { Colors } from "../../theme/colors";
 
 export const TextStyled = styled.Text<{ color?: keyof Colors | string }>`
   font-family: ${props => props.theme.text.defaultFont};

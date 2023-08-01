@@ -22,6 +22,20 @@ export const WalletTheme: DefaultTheme = {
         white: '#FFFFFF',
         default: '#FFFFFF',
     },
+    view: {
+        backgroundColor: '#142995',
+        animatedColor: '#EEEEEE',
+    },
+    toolbar: {
+        color: '#142995',
+        titleColor: '#12C2E9'
+    },
+    button: {
+        color: '#12C2E9',
+        textColor: '#FFFFFF',
+        disabledColor: '#EEEEEE',
+        disabledTextColor: '#BBBBBB'
+    },
     text: {
         defaultColor: '#FFFFFF',
         defaultFont: WalletFonts.regular,
