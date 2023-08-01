@@ -18,8 +18,8 @@ import {
 } from 'react-native';
 
 import { P } from "./src/components";
-import { ThemeProvider } from "styled-components";
-import { DefaultTheme, useTheme } from "./src/theme";
+import { ThemeProvider } from 'styled-components/native';
+import { WalletTheme, useTheme } from "./src/theme";
 
 
 import {
@@ -68,7 +68,7 @@ function App(): JSX.Element {
   };
 
   return (
-    <ThemeProvider theme={DefaultTheme}>
+    <ThemeProvider theme={WalletTheme}>
       <SafeAreaView style={backgroundStyle}>
         <StatusBar
           barStyle={isDarkMode ? 'light-content' : 'dark-content'}
@@ -105,7 +105,7 @@ function App(): JSX.Element {
 const ViewExample = () => {
   const theme = useTheme();
 
-  return (<P color={theme.colors.blueDark}>Ops chegadno....</P>)
+  return (<P color={theme.colors.blueDark}>Ops 4 go chegadno....</P>)
 }
 
 const styles = StyleSheet.create({
