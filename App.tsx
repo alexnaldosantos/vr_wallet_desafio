@@ -7,12 +7,13 @@
 
 import React from 'react';
 
-import { P, View, Window } from "./src/components";
+import { P, View, Window, TextInput, TextInputWithLabel } from "./src/components";
 import { ThemeProvider } from 'styled-components/native';
 import { WalletTheme, useTheme } from "./src/theme";
 import { Icons } from "./src/theme/icons";
 
 import { ButtonBar, Button } from './src/components/button';
+import { Image } from 'react-native/Libraries/Image/Image';
 
 
 function App(): JSX.Element {
@@ -23,9 +24,12 @@ function App(): JSX.Element {
 
   return (
     <ThemeProvider theme={WalletTheme}>
-      <Window title="cadastro" leftButton={<ButtonBar image={Icons.back} onPress={handleButtonPress} />} rightButton={<ButtonBar image={Icons.plus} />}>
+      <Window title="cadastro" leftButton={<ButtonBar icon={Icons.back} onPress={handleButtonPress} />} rightButton={<ButtonBar icon={Icons.plus} />}>
         <ViewExample />
         <Button text={'button'} onPress={handleButtonPress}></Button>
+        <TextInputWithLabel label='número do cartão de crédito' placeholder="digite sua senha" icon={Icons.card} />
+        <TextInputWithLabel value='ola' label='número do titular do cartão' />
+
         {/* <View style={{
           backgroundColor: '#EEEEEE',
           width: 350,
@@ -43,7 +47,7 @@ function App(): JSX.Element {
 const ViewExample = () => {
   const theme = useTheme();
 
-  return (<P>Ops 9 go chegadno....</P>)
+  return (<P>Ops 10 go chegadno....</P>)
 }
 
 export default App;

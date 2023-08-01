@@ -18,6 +18,15 @@ declare module 'styled-components/native' {
             disabledColor: string,
             disabledTextColor: string
         },
+        input: {
+            fontFamily: string,
+            fontSize: string,
+            lineHeight: string,
+            fontWeight: string
+            backgroundColor: string,
+            textColor: string,
+            placeHolderColor: string
+        },
         text: {
             defaultColor: string,
             defaultFont: string,

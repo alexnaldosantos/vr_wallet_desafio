@@ -19,7 +19,7 @@ export const Button: React.FC<ButtonProps> = ({ children, color, text, textColor
     const isStringText = typeof text == 'string';
     const isEnabled = onPress && (enabled || enabled == undefined);
     return (
-        <TouchableOpacity onPress={onPress} disabled={!isEnabled}>
+        <TouchableOpacity onPress={onPress} disabled={!isEnabled} activeOpacity={0.8}>
             <ButtonContainer color={color} {...props} enabled={isEnabled}>
                 {isStringText ? <H5 color={isEnabled ? textColor || theme.button.textColor : theme.button.disabledTextColor}>{(text)}</H5> : null}
                 {children}

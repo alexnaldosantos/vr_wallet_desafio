@@ -36,6 +36,15 @@ export const WalletTheme: DefaultTheme = {
         disabledColor: '#EEEEEE',
         disabledTextColor: '#BBBBBB'
     },
+    input: {
+        fontFamily: WalletFonts.regular,
+        fontSize: '16px',
+        lineHeight: '18px',
+        fontWeight: defaultFontWeight,
+        backgroundColor: '#EEEEEE',
+        textColor: '#111111',
+        placeHolderColor: '#BBBBBB'
+    },
     text: {
         defaultColor: '#FFFFFF',
         defaultFont: WalletFonts.regular,

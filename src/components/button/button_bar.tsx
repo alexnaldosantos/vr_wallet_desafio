@@ -6,17 +6,17 @@ import { Colors } from "../../theme/colors";
 
 interface ButtonBarProps extends ViewProps {
     color?: keyof Colors | string;
-    imageColor?: keyof Colors | string;
-    image: any
+    icon: any;
+    iconColor?: keyof Colors | string;
     onPress?: () => void;
 }
 
-export const ButtonBar: React.FC<ButtonBarProps> = ({ children, image, color, imageColor, onPress, ...props }) => {
+export const ButtonBar: React.FC<ButtonBarProps> = ({ children, icon, color, iconColor, onPress, ...props }) => {
 
     return (
         <TouchableOpacity onPress={onPress} disabled={!onPress}>
             <ButtonContainer color={color} {...props}>
-                {image ? <Image source={image} tintColor={imageColor} /> : null}
+                {icon ? <Image source={icon} tintColor={iconColor} /> : null}
                 {children}
             </ButtonContainer>
         </TouchableOpacity>
