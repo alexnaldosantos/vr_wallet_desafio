@@ -14,6 +14,13 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-Wallet-WalletTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Wallet-WalletTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		38E574DD6DA746898F3AFF86 /* PTSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607ABB3BB2344153AAA862A6 /* PTSans-Bold.ttf */; };
+		E46E4458769C44D4B64B6FD3 /* PTSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C976B5C4FC1544468C26D22E /* PTSans-BoldItalic.ttf */; };
+		4F569F450CA641BA890859B7 /* PTSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08DD4FAF1D7146E8A20260D5 /* PTSans-Italic.ttf */; };
+		22FD8512339F43A4AFD8C7E4 /* PTSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A11A5F7B6B7A4510801F2556 /* PTSans-Regular.ttf */; };
+		ED2E3E19A4F84944AE0730E6 /* PTSansCaption-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CB964EC85FD44C98FA399D5 /* PTSansCaption-Bold.ttf */; };
+		E5FEFBA3E0044B499A805B84 /* PTSansCaption-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BC089C2345441AE8ABF3F1F /* PTSansCaption-Regular.ttf */; };
+		328ED75641B8408292AB5F92 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82CCD640912B4D5BBA6C2A5B /* OFL.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Wallet/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Wallet-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet-WalletTests.release.xcconfig"; path = "Target Support Files/Pods-Wallet-WalletTests/Pods-Wallet-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		607ABB3BB2344153AAA862A6 /* PTSans-Bold.ttf */ = {isa = PBXFileReference; name = "PTSans-Bold.ttf"; path = "../assets/fonts/pt_sans/PTSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C976B5C4FC1544468C26D22E /* PTSans-BoldItalic.ttf */ = {isa = PBXFileReference; name = "PTSans-BoldItalic.ttf"; path = "../assets/fonts/pt_sans/PTSans-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		08DD4FAF1D7146E8A20260D5 /* PTSans-Italic.ttf */ = {isa = PBXFileReference; name = "PTSans-Italic.ttf"; path = "../assets/fonts/pt_sans/PTSans-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A11A5F7B6B7A4510801F2556 /* PTSans-Regular.ttf */ = {isa = PBXFileReference; name = "PTSans-Regular.ttf"; path = "../assets/fonts/pt_sans/PTSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1CB964EC85FD44C98FA399D5 /* PTSansCaption-Bold.ttf */ = {isa = PBXFileReference; name = "PTSansCaption-Bold.ttf"; path = "../assets/fonts/pt_sans_caption/PTSansCaption-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9BC089C2345441AE8ABF3F1F /* PTSansCaption-Regular.ttf */ = {isa = PBXFileReference; name = "PTSansCaption-Regular.ttf"; path = "../assets/fonts/pt_sans_caption/PTSansCaption-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		82CCD640912B4D5BBA6C2A5B /* OFL.txt */ = {isa = PBXFileReference; name = "OFL.txt"; path = "../assets/fonts/pt_sans/OFL.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +136,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				79438E90E3184AC19E807382 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +162,21 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		79438E90E3184AC19E807382 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				607ABB3BB2344153AAA862A6 /* PTSans-Bold.ttf */,
+				C976B5C4FC1544468C26D22E /* PTSans-BoldItalic.ttf */,
+				08DD4FAF1D7146E8A20260D5 /* PTSans-Italic.ttf */,
+				A11A5F7B6B7A4510801F2556 /* PTSans-Regular.ttf */,
+				1CB964EC85FD44C98FA399D5 /* PTSansCaption-Bold.ttf */,
+				9BC089C2345441AE8ABF3F1F /* PTSansCaption-Regular.ttf */,
+				82CCD640912B4D5BBA6C2A5B /* OFL.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +274,13 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				38E574DD6DA746898F3AFF86 /* PTSans-Bold.ttf in Resources */,
+				E46E4458769C44D4B64B6FD3 /* PTSans-BoldItalic.ttf in Resources */,
+				4F569F450CA641BA890859B7 /* PTSans-Italic.ttf in Resources */,
+				22FD8512339F43A4AFD8C7E4 /* PTSans-Regular.ttf in Resources */,
+				ED2E3E19A4F84944AE0730E6 /* PTSansCaption-Bold.ttf in Resources */,
+				E5FEFBA3E0044B499A805B84 /* PTSansCaption-Regular.ttf in Resources */,
+				328ED75641B8408292AB5F92 /* OFL.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
