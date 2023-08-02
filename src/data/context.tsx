@@ -1,5 +1,6 @@
-import React, { PropsWithChildren, createContext, useContext, useState } from 'react';
+import React, { PropsWithChildren, createContext, useContext, useState, useCallback, useEffect } from 'react';
 import { CreditCard } from "./creditcard";
+import WalletAPI from './api';
 
 type WalletData = {
   current?: CreditCard;
@@ -17,13 +18,28 @@ const WalletContext = createContext<WalletContextData | undefined>(undefined);
 
 export const WalletProvider: React.FC<PropsWithChildren> = ({ children }) => {
   const [wallet, setWallet] = useState<WalletData>({});
+  const api = WalletAPI.getInstance();
 
-  const addCard = (card: CreditCard) => {
-    setWallet((prevState) => ({
-      ...prevState,
-      cards: [...(prevState.cards || []), card],
+  const addCard = useCallback(async (card: CreditCard) => {
+    const newCard = await api.addCard(card);
+
+    setWallet(prevData => ({
+      ...prevData,
+      cards: [...(prevData.cards || []), newCard]
     }));
-  };
+  }, []);
+
+  const loadCards = useCallback(async () => {
+    const existingCards = await api.getCards();
+    setWallet(prevData => ({
+      ...prevData,
+      cards: existingCards
+    }));
+  }, []);
+
+  useEffect(() => {
+    loadCards();
+  }, [loadCards]);
 
   const setCurrentCard = (cardId: string) => {
     const card = wallet.cards?.find((card) => card.id === cardId);
