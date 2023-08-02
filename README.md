@@ -7,7 +7,7 @@ Meu contato é : [Alexnaldo Santos](https://www.linkedin.com/in/alexnaldo/)
 
 # Iniciando - Instalar o Json Server (porta 3000)
 
->**Note**: É necessário ter o [JSon Server](https://reactnative.dev/docs/environment-setup)
+>**Note**: É necessário ter o [JSon Server](https://github.com/typicode/json-server)
 ```bash
 npm install -g json-server
 ```
