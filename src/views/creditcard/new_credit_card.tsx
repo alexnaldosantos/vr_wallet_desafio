@@ -95,6 +95,7 @@ export const NewCreditCard: React.FC = () => {
 const CardContainer = styled.View`
     flex: 1;
     justify-content: center;
+    padding: 16px;
 `;
 
 const ExpCvvContainer = styled.View`

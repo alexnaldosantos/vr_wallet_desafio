@@ -33,6 +33,7 @@ export const Home: React.FC = () => {
 }
 
 const HomeContainer = styled.View`
-flex: 1;
-justify-content: center;
+    flex: 1;
+    justify-content: center;
+    padding: 16px;
 `;
