@@ -7,7 +7,7 @@ Meu contato é : [Alexnaldo Santos](https://www.linkedin.com/in/alexnaldo/)
 
 # Iniciando - Instalar o Json Server (porta 3000)
 
->**Note**: É necessário ter o [JSon Server](https://github.com/typicode/json-server)
+**Note**: É necessário ter o [JSon Server](https://github.com/typicode/json-server)
 ```bash
 npm install -g json-server
 ```
@@ -18,7 +18,7 @@ Execute o comando a seguir diretamente na pasta principal do projeto
 ```bash
 json-server --watch db.json
 ```
->**Note** - Os testes foram feitos no emulador do Android, que utiliza a porta 10.0.2.2 como alternativa ao localhost
+**Note** Os testes foram feitos no emulador do Android, que utiliza a porta 10.0.2.2 como alternativa ao localhost
 Verifique no arquivo src/data/api.ts
 
 ## Passo 1: Inicie Metro Server
@@ -33,9 +33,10 @@ npm start
 yarn start
 ```
 
-## Step 2: Rodar os testes unitários
+## Passo 2: Rodar os testes unitários
 Foram feitos alguns testes unitários a fim de demonstrar como os componentes visuais podem ser testados.
 
+```bash
 # using npm
 npm test
 
@@ -43,7 +44,7 @@ npm test
 yarn test
 ```
 
-## Step 3: Inicie a aplicação
+## Passo 3: Inicie a aplicação
 
 
 ### For Android
