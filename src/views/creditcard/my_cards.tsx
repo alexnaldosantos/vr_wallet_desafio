@@ -20,7 +20,7 @@ export const MyCards: React.FC = () => {
     }, [loadCards]);
 
     const goBack = () => {
-        navigation.goBack();
+        navigation.navigate(Routes.home);
     };
 
     const goAdd = () => {
