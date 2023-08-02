@@ -19,7 +19,7 @@ Execute o comando a seguir diretamente na pasta principal do projeto
 json-server --watch db.json
 ```
 >**Note** - Os testes foram feitos no emulador do Android, que utiliza a porta 10.0.2.2 como alternativa ao localhost
-Verifique no arquivo : src/data/api.ts
+Verifique no arquivo src/data/api.ts
 
 ## Passo 1: Inicie Metro Server
 
@@ -34,7 +34,7 @@ yarn start
 ```
 
 ## Step 2: Rodar os testes unitários
-Foram feitos alguns testes unitários a fim de demonstrar como os componentes visuais podem ser testes.
+Foram feitos alguns testes unitários a fim de demonstrar como os componentes visuais podem ser testados.
 
 # using npm
 npm test

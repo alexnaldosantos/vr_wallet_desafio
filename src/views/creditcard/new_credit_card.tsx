@@ -9,7 +9,7 @@ import { Routes } from '../../navigation';
 
 export const NewCreditCard: React.FC = () => {
     const { setAddingCard } = useWallet();
-    const navigation = useNavigation();
+    const navigation = useNavigation<any>();
     const [card, setCard] = useState<CreditCard | null>({
         id: '',
         name: '',

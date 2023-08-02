@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Icons } from "../../theme/icons";
-import { ButtonBar, Button, Window, SizedBox, H4, HorizontalCenter, H1 } from '../../components';
+import { ButtonBar, Button, Window, H4, HorizontalCenter, H1 } from '../../components';
 import { useNavigation } from '@react-navigation/native';
 import styled from 'styled-components/native';
-import { CreditCard, useWallet } from '../../data';
+import { useWallet } from '../../data';
 import { Card } from './components/card';
 import { useTheme } from '../../theme';
 import { Routes } from '../../navigation';
@@ -12,7 +12,7 @@ import { Routes } from '../../navigation';
 export const FinishCreditCard: React.FC = () => {
     const theme = useTheme();
     const { addCard, wallet } = useWallet();
-    const navigation = useNavigation();
+    const navigation = useNavigation<any>();
 
     const goBack = () => {
         navigation.goBack();

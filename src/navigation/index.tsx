@@ -8,7 +8,7 @@ const Stack = createNativeStackNavigator();
 
 export const StackNavigator: React.FC = () => {
     return (
-        <Stack.Navigator initialRouteName="home" screenOptions={{
+        <Stack.Navigator initialRouteName={Routes.home} screenOptions={{
             headerShown: false
         }}>
             <Stack.Screen name={Routes.home} component={Home} />

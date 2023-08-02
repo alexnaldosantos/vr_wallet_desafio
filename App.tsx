@@ -1,6 +1,6 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * Desafio BR Benefícios feito por Alexnaldo Santos
+ * https://github.com/alexnaldosantos/vr_wallet_desafio
  *
  * @format
  */

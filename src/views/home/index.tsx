@@ -3,9 +3,11 @@ import { Window, Button, H1, HorizontalCenter, SizedBox } from '../../components
 import { useTheme } from "../../theme";
 import styled from 'styled-components/native';
 import { Routes } from '../../navigation';
+import { useNavigation } from '@react-navigation/native';
 
-export const Home: React.FC = ({ navigation }) => {
+export const Home: React.FC = () => {
     const theme = useTheme();
+    const navigation = useNavigation<any>();
 
     const newCreditCard = () => {
         navigation.push(Routes.new);

@@ -3,10 +3,8 @@ import { CreditCard } from '../../../data';
 import { Colors } from '../../../theme/colors';
 import { ViewStyled } from '../../../components/view/styles';
 import styled from 'styled-components/native';
-import { H3, H5, HorizontalCenter, P, SMALL, SizedBox } from '../../../components';
+import { H5, HorizontalCenter, P, SMALL, SizedBox } from '../../../components';
 import { CardNumberObfuscator } from "./card_number_obfucator";
-import { useTheme } from '../../../theme';
-
 
 interface CardProps {
     color?: keyof Colors | string;
@@ -16,7 +14,6 @@ interface CardProps {
 }
 
 export const Card: React.FC<CardProps> = ({ color, textColor, card, cardName = 'Black Card' }) => {
-    const theme = useTheme();
 
     return (
         <HorizontalCenter>
