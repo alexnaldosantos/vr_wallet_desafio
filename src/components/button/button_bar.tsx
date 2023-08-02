@@ -26,6 +26,7 @@ export const ButtonBar: React.FC<ButtonBarProps> = ({ children, icon, color, ico
 /* local style */
 
 const ButtonContainer = styled(ViewStyled)`
+    background-color: ${props => props.color || 'transparent'};
     width: 39px;
     height: 39px;
     align-items: center;

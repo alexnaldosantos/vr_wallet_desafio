@@ -2,15 +2,17 @@ import React from 'react';
 import { Window, Button, H1, HorizontalCenter, SizedBox } from '../../components';
 import { useTheme } from "../../theme";
 import styled from 'styled-components/native';
+import { Routes } from '../../navigation';
 
 export const Home: React.FC = ({ navigation }) => {
     const theme = useTheme();
 
     const newCreditCard = () => {
-        navigation.push('new-credit-card');
+        navigation.push(Routes.new);
     }
 
     const myCards = () => {
+        navigation.push(Routes.cards);
     }
 
     return (

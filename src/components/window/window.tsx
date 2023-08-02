@@ -27,7 +27,7 @@ export const Window: React.FC<WindowProps> = ({ children, title, leftButton: lef
             {leftButton ? (leftButton) : null}
           </ToolBarItemLeft >
           <ToolBarItemCenter>
-            {isStringTitle ? <H3 color={titleColor || theme.toolbar.titleColor}>{(title)}</H3> : null}
+            {isStringTitle ? <H3 color={titleColor || theme.toolbar.titleColor}>{(title)}</H3> : title}
           </ToolBarItemCenter>
           <ToolBarItemRight>
             {rightButton ? (rightButton) : null}
@@ -46,7 +46,6 @@ export const WindowContainer = styled.SafeAreaView`
 
 export const WindowStyled = styled(ViewStyled)`
   flex: 1;
-  padding: 0px 16px 0px 16px;
 `;
 
 const ToolBarItemLeft = styled(ViewStyled)`
@@ -66,9 +65,9 @@ const ToolBarItemRight = styled(ViewStyled)`
 `;
 
 const HeaderContainer = styled(ViewStyled)`
+  padding: 0px 16px 0px 16px;
   height: 66px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 6px 0px 6px 0px;
 `;

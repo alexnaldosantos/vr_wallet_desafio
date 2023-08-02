@@ -4,13 +4,13 @@ import { Colors } from '../../../theme/colors';
 import { SMALL } from '../../../components';
 
 type CardNumberObfuscatorProps = {
-    number: string;
+    number?: string;
     color?: keyof Colors | string;
 };
 
 export const CardNumberObfuscator: React.FC<CardNumberObfuscatorProps> = ({ number, color: color }) => {
-    const obfuscatedPortion = number.replaceAll(' ', '').slice(0, -4);
-    const visiblePortion = number.replaceAll(' ', '').slice(-4);
+    const obfuscatedPortion = number?.replaceAll(' ', '').slice(0, -4);
+    const visiblePortion = number?.replaceAll(' ', '').slice(-4);
 
     return (
         <DotContainer>
@@ -22,7 +22,7 @@ export const CardNumberObfuscator: React.FC<CardNumberObfuscatorProps> = ({ numb
                 </DotGroup>
             ))}
             <DotGroup>
-                <SMALL>{visiblePortion}</SMALL>
+                <SMALL color={color}>{visiblePortion}</SMALL>
             </DotGroup>
         </DotContainer>
     );

@@ -1,8 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import AnimatedPage from "../animated";
 import { Home } from '../views/home';
-import { NewCreditCard } from '../views/creditcard';
+import { MyCards, NewCreditCard } from '../views/creditcard';
 import { FinishCreditCard } from '../views/creditcard';
 
 const Stack = createNativeStackNavigator();
@@ -12,10 +11,17 @@ export const StackNavigator: React.FC = () => {
         <Stack.Navigator initialRouteName="home" screenOptions={{
             headerShown: false
         }}>
-            <Stack.Screen name="home" component={Home} />
-            <Stack.Screen name="new-credit-card" component={NewCreditCard} />
-            <Stack.Screen name="finish-credit-card" component={FinishCreditCard} />
-            <Stack.Screen name="animated" component={AnimatedPage} />
+            <Stack.Screen name={Routes.home} component={Home} />
+            <Stack.Screen name={Routes.cards} component={MyCards} />
+            <Stack.Screen name={Routes.new} component={NewCreditCard} />
+            <Stack.Screen name={Routes.finish} component={FinishCreditCard} />
         </Stack.Navigator>
     );
 };
+
+export const Routes = {
+    home: 'home',
+    cards: 'cards',
+    new: 'new-credit-card',
+    finish: 'finish-credit-card'
+}

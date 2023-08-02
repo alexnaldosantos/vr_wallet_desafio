@@ -13,6 +13,7 @@ interface WalletContextData {
   addCard: (card: CreditCard) => void;
   setAddingCard: (card: CreditCard) => void;
   setCurrentCard: (cardId: string) => void;
+  loadCards: () => void;
 }
 
 
@@ -48,10 +49,6 @@ export const WalletProvider: React.FC<PropsWithChildren> = ({ children }) => {
     }));
   }, []);
 
-  useEffect(() => {
-    loadCards();
-  }, [loadCards]);
-
   const setCurrentCard = (cardId: string) => {
     const card = wallet.cards?.find((card) => card.id === cardId);
     if (card) {
@@ -63,7 +60,7 @@ export const WalletProvider: React.FC<PropsWithChildren> = ({ children }) => {
   };
 
   return (
-    <WalletContext.Provider value={{ wallet, setAddingCard, addCard, setCurrentCard }}>
+    <WalletContext.Provider value={{ wallet, loadCards, setAddingCard, addCard, setCurrentCard }}>
       {children}
     </WalletContext.Provider>
   );

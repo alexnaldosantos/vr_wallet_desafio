@@ -4,6 +4,7 @@ import { ButtonBar, Button, Window, InputCreditCard, TextInputWithLabel, InputCr
 import { useNavigation } from '@react-navigation/native';
 import styled from 'styled-components/native';
 import { CreditCard, useWallet } from '../../data';
+import { Routes } from '../../navigation';
 
 
 export const NewCreditCard: React.FC = () => {
@@ -23,7 +24,7 @@ export const NewCreditCard: React.FC = () => {
     const handleButtonPress = () => {
         if (card != null) {
             setAddingCard(card);
-            navigation.push('finish-credit-card');
+            navigation.push(Routes.finish);
         }
     };
 

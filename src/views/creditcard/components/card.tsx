@@ -10,25 +10,22 @@ import { useTheme } from '../../../theme';
 
 interface CardProps {
     color?: keyof Colors | string;
+    textColor?: keyof Colors | string;
     card?: CreditCard;
+    cardName?: string;
 }
 
-export const Card: React.FC<CardProps> = ({ color, card }) => {
+export const Card: React.FC<CardProps> = ({ color, textColor, card, cardName = 'Black Card' }) => {
     const theme = useTheme();
-
-    //TODO: card color at CreditCard object :-)
-    const getCardName = () => {
-        return color == theme.colors.black ? 'Black Card' : 'Green Card';
-    }
 
     return (
         <HorizontalCenter>
             <CardStyled color={color}>
-                <H5>{getCardName()}</H5>
+                <H5 color={textColor}>{cardName}</H5>
                 <SizedBox size='34px' />
-                <P>{card?.name}</P>
-                <CardNumberObfuscator number='1234 5678 9158 4587' />
-                <SMALL>Validade {card?.exp}</SMALL>
+                <P color={textColor}>{card?.name}</P>
+                <CardNumberObfuscator color={textColor} number={card?.id} />
+                <SMALL color={textColor}>Validade {card?.exp}</SMALL>
             </CardStyled>
         </HorizontalCenter>
     );

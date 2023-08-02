@@ -6,6 +6,7 @@ import styled from 'styled-components/native';
 import { CreditCard, useWallet } from '../../data';
 import { Card } from './components/card';
 import { useTheme } from '../../theme';
+import { Routes } from '../../navigation';
 
 
 export const FinishCreditCard: React.FC = () => {
@@ -20,7 +21,7 @@ export const FinishCreditCard: React.FC = () => {
     const handleButtonPress = () => {
         if (wallet.adding != null) {
             addCard(wallet.adding)
-            navigation.push('animated');
+            navigation.navigate(Routes.cards);
         }
     };
 

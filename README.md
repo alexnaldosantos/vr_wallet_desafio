@@ -1,7 +1,7 @@
 # Atenção!
 
 Este é um projeto de prova de conceito feito por Alexnaldo Santos (alexnaldo.santos@gmail.com).
-Seu uso é meramente didático, sendo proibida sua reprodução em qualquer forma.
+Seu uso é meramente didático, sendo proibida sua reprodução sem a devida autorização.
 Meu contato é : [Alexnaldo Santos](https://www.linkedin.com/in/alexnaldo/)
 
 
@@ -33,7 +33,18 @@ npm start
 yarn start
 ```
 
-## Step 2: Inicie a aplicação
+## Step 2: Rodar os testes unitários
+Foram feitos alguns testes unitários a fim de demonstrar como os componentes visuais podem ser testes.
+
+# using npm
+npm test
+
+# OR using Yarn
+yarn test
+```
+
+## Step 3: Inicie a aplicação
+
 
 ### For Android
 
