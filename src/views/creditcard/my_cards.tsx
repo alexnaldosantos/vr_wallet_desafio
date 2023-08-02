@@ -57,7 +57,7 @@ export const MyCards: React.FC = () => {
                         </CardItemContainer>
                     ))}
                 </ScrollView>
-                <P>usar user cartão</P>
+                <P>usar esse cartão</P>
             </WalletContainer>
         </Window>
     );
