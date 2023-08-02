@@ -12,15 +12,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		22FD8512339F43A4AFD8C7E4 /* PTSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A11A5F7B6B7A4510801F2556 /* PTSans-Regular.ttf */; };
+		328ED75641B8408292AB5F92 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82CCD640912B4D5BBA6C2A5B /* OFL.txt */; };
+		38E574DD6DA746898F3AFF86 /* PTSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607ABB3BB2344153AAA862A6 /* PTSans-Bold.ttf */; };
+		4F569F450CA641BA890859B7 /* PTSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08DD4FAF1D7146E8A20260D5 /* PTSans-Italic.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Wallet-WalletTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Wallet-WalletTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		38E574DD6DA746898F3AFF86 /* PTSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607ABB3BB2344153AAA862A6 /* PTSans-Bold.ttf */; };
 		E46E4458769C44D4B64B6FD3 /* PTSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C976B5C4FC1544468C26D22E /* PTSans-BoldItalic.ttf */; };
-		4F569F450CA641BA890859B7 /* PTSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08DD4FAF1D7146E8A20260D5 /* PTSans-Italic.ttf */; };
-		22FD8512339F43A4AFD8C7E4 /* PTSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A11A5F7B6B7A4510801F2556 /* PTSans-Regular.ttf */; };
-		ED2E3E19A4F84944AE0730E6 /* PTSansCaption-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CB964EC85FD44C98FA399D5 /* PTSansCaption-Bold.ttf */; };
 		E5FEFBA3E0044B499A805B84 /* PTSansCaption-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BC089C2345441AE8ABF3F1F /* PTSansCaption-Regular.ttf */; };
-		328ED75641B8408292AB5F92 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82CCD640912B4D5BBA6C2A5B /* OFL.txt */; };
+		ED2E3E19A4F84944AE0730E6 /* PTSansCaption-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CB964EC85FD44C98FA399D5 /* PTSansCaption-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 		00E356EE1AD99517003FC87E /* WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* WalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTests.m; sourceTree = "<group>"; };
+		08DD4FAF1D7146E8A20260D5 /* PTSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PTSans-Italic.ttf"; path = "../assets/fonts/pt_sans/PTSans-Italic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Wallet/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Wallet/AppDelegate.mm; sourceTree = "<group>"; };
@@ -44,20 +45,19 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Wallet/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Wallet/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Wallet-WalletTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet-WalletTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB964EC85FD44C98FA399D5 /* PTSansCaption-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PTSansCaption-Bold.ttf"; path = "../assets/fonts/pt_sans_caption/PTSansCaption-Bold.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet.debug.xcconfig"; path = "Target Support Files/Pods-Wallet/Pods-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet.release.xcconfig"; path = "Target Support Files/Pods-Wallet/Pods-Wallet.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Wallet-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet-WalletTests.debug.xcconfig"; path = "Target Support Files/Pods-Wallet-WalletTests/Pods-Wallet-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607ABB3BB2344153AAA862A6 /* PTSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PTSans-Bold.ttf"; path = "../assets/fonts/pt_sans/PTSans-Bold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Wallet/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82CCD640912B4D5BBA6C2A5B /* OFL.txt */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OFL.txt; path = ../assets/fonts/pt_sans/OFL.txt; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Wallet-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet-WalletTests.release.xcconfig"; path = "Target Support Files/Pods-Wallet-WalletTests/Pods-Wallet-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		9BC089C2345441AE8ABF3F1F /* PTSansCaption-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PTSansCaption-Regular.ttf"; path = "../assets/fonts/pt_sans_caption/PTSansCaption-Regular.ttf"; sourceTree = "<group>"; };
+		A11A5F7B6B7A4510801F2556 /* PTSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PTSans-Regular.ttf"; path = "../assets/fonts/pt_sans/PTSans-Regular.ttf"; sourceTree = "<group>"; };
+		C976B5C4FC1544468C26D22E /* PTSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PTSans-BoldItalic.ttf"; path = "../assets/fonts/pt_sans/PTSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		607ABB3BB2344153AAA862A6 /* PTSans-Bold.ttf */ = {isa = PBXFileReference; name = "PTSans-Bold.ttf"; path = "../assets/fonts/pt_sans/PTSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C976B5C4FC1544468C26D22E /* PTSans-BoldItalic.ttf */ = {isa = PBXFileReference; name = "PTSans-BoldItalic.ttf"; path = "../assets/fonts/pt_sans/PTSans-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		08DD4FAF1D7146E8A20260D5 /* PTSans-Italic.ttf */ = {isa = PBXFileReference; name = "PTSans-Italic.ttf"; path = "../assets/fonts/pt_sans/PTSans-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A11A5F7B6B7A4510801F2556 /* PTSans-Regular.ttf */ = {isa = PBXFileReference; name = "PTSans-Regular.ttf"; path = "../assets/fonts/pt_sans/PTSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1CB964EC85FD44C98FA399D5 /* PTSansCaption-Bold.ttf */ = {isa = PBXFileReference; name = "PTSansCaption-Bold.ttf"; path = "../assets/fonts/pt_sans_caption/PTSansCaption-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9BC089C2345441AE8ABF3F1F /* PTSansCaption-Regular.ttf */ = {isa = PBXFileReference; name = "PTSansCaption-Regular.ttf"; path = "../assets/fonts/pt_sans_caption/PTSansCaption-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		82CCD640912B4D5BBA6C2A5B /* OFL.txt */ = {isa = PBXFileReference; name = "OFL.txt"; path = "../assets/fonts/pt_sans/OFL.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +120,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		79438E90E3184AC19E807382 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				607ABB3BB2344153AAA862A6 /* PTSans-Bold.ttf */,
+				C976B5C4FC1544468C26D22E /* PTSans-BoldItalic.ttf */,
+				08DD4FAF1D7146E8A20260D5 /* PTSans-Italic.ttf */,
+				A11A5F7B6B7A4510801F2556 /* PTSans-Regular.ttf */,
+				1CB964EC85FD44C98FA399D5 /* PTSansCaption-Bold.ttf */,
+				9BC089C2345441AE8ABF3F1F /* PTSansCaption-Regular.ttf */,
+				82CCD640912B4D5BBA6C2A5B /* OFL.txt */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,21 +177,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		79438E90E3184AC19E807382 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				607ABB3BB2344153AAA862A6 /* PTSans-Bold.ttf */,
-				C976B5C4FC1544468C26D22E /* PTSans-BoldItalic.ttf */,
-				08DD4FAF1D7146E8A20260D5 /* PTSans-Italic.ttf */,
-				A11A5F7B6B7A4510801F2556 /* PTSans-Regular.ttf */,
-				1CB964EC85FD44C98FA399D5 /* PTSansCaption-Bold.ttf */,
-				9BC089C2345441AE8ABF3F1F /* PTSansCaption-Regular.ttf */,
-				82CCD640912B4D5BBA6C2A5B /* OFL.txt */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
