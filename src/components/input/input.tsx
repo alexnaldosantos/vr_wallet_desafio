@@ -1,17 +1,17 @@
 import React from 'react';
 import { TextInputStyled } from './styles';
 import styled from 'styled-components/native';
-import { Image, TextProps } from 'react-native';
+import { Image, TextInputProps } from 'react-native';
 import { useTheme } from '../../theme';
 import { SMALL } from '../text';
 
-interface SubTextProps extends TextProps {
+interface SubTextInputProps extends TextInputProps {
   placeholder?: string;
   icon?: any;
   value?: string;
 }
 
-export const TextInput: React.FC<SubTextProps> = ({ children, value, icon, placeholder, ...props }) => {
+export const TextInput: React.FC<SubTextInputProps> = ({ children, value, icon, placeholder, ...props }) => {
   const theme = useTheme();
   return (
     <InputContainer>
@@ -39,20 +39,19 @@ padding: 6.5px 10px;
 
 /* TextInputWithLabel */
 
-interface SubTextLabelProps extends SubTextProps {
+interface InputTextLabelProps extends SubTextInputProps {
   label: string;
   icon?: any;
-  value?: string;
 }
 
-export const TextInputWithLabel: React.FC<SubTextLabelProps> = ({ label, value, placeholder, icon, ...props }) => {
+export const TextInputWithLabel: React.FC<InputTextLabelProps> = ({ label, placeholder, icon, ...props }) => {
   const theme = useTheme();
   return (
     <InputLabelContainer>
       <LabelContainer>
         <SMALL>{label}</SMALL>
       </LabelContainer>
-      <TextInput value={value} icon={icon} placeholder={placeholder} {...props}></TextInput>
+      <TextInput icon={icon} placeholder={placeholder} {...props}></TextInput>
     </InputLabelContainer>
   );
 };
