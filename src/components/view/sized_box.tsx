@@ -16,7 +16,7 @@ export const SizedBox: React.FC<SizedBoxProps> = ({ direction = 'column', size }
 
 const RowContainer = styled.View<{ size: string }>`
     background-color: transparent;
-    height: ${props => `${props.size}px`};
+    height: ${props => props.size};
 `;
 
 const ColumnContainer = styled.View<{ size: string }>`

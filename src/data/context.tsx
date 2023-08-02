@@ -4,12 +4,14 @@ import WalletAPI from './api';
 
 type WalletData = {
   current?: CreditCard;
+  adding?: CreditCard;
   cards?: CreditCard[];
 }
 
 interface WalletContextData {
   wallet: WalletData;
   addCard: (card: CreditCard) => void;
+  setAddingCard: (card: CreditCard) => void;
   setCurrentCard: (cardId: string) => void;
 }
 
@@ -28,6 +30,15 @@ export const WalletProvider: React.FC<PropsWithChildren> = ({ children }) => {
       cards: [...(prevData.cards || []), newCard]
     }));
   }, []);
+
+  const setAddingCard = (card: CreditCard) => {
+    if (card) {
+      setWallet((prevState) => ({
+        ...prevState,
+        adding: card,
+      }));
+    }
+  };
 
   const loadCards = useCallback(async () => {
     const existingCards = await api.getCards();
@@ -52,7 +63,7 @@ export const WalletProvider: React.FC<PropsWithChildren> = ({ children }) => {
   };
 
   return (
-    <WalletContext.Provider value={{ wallet, addCard, setCurrentCard }}>
+    <WalletContext.Provider value={{ wallet, setAddingCard, addCard, setCurrentCard }}>
       {children}
     </WalletContext.Provider>
   );

@@ -19,9 +19,9 @@ export const Home: React.FC = ({ navigation }) => {
                 <HorizontalCenter>
                     <H1>Wallet Test</H1>
                 </HorizontalCenter>
-                <SizedBox size='10' />
+                <SizedBox size='10px' />
                 <Button text={'meus cartões'} onPress={myCards} />
-                <SizedBox size='20' />
+                <SizedBox size='20px' />
                 <Button text={'cadastrar cartão'} onPress={newCreditCard} color={theme.colors.greenLight} textColor={theme.colors.black} />
             </HomeContainer>
         </Window>

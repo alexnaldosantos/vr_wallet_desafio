@@ -21,7 +21,7 @@ const Polygon = styled(AnimatedPolygon)`
 const AppAnimated: React.FC = ({ navigation }) => {
 
   const goBack = () => {
-    navigation.pop();
+    navigation.navigate('home');
   };
 
   const polygon1Animation = useRef(new Animated.Value(0)).current;

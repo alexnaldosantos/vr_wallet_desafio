@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AnimatedPage from "../animated";
 import { Home } from '../views/home';
 import { NewCreditCard } from '../views/creditcard';
+import { FinishCreditCard } from '../views/creditcard';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,7 @@ export const StackNavigator: React.FC = () => {
         }}>
             <Stack.Screen name="home" component={Home} />
             <Stack.Screen name="new-credit-card" component={NewCreditCard} />
+            <Stack.Screen name="finish-credit-card" component={FinishCreditCard} />
             <Stack.Screen name="animated" component={AnimatedPage} />
         </Stack.Navigator>
     );
