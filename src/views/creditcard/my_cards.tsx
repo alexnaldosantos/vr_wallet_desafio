@@ -38,6 +38,7 @@ export const MyCards: React.FC = () => {
 
     return (
         <Window
+            showWallpaper={false}
             toolBarColor={theme.colors.white}
             title="Wallet Test"
             titleColor={theme.colors.blueDark}

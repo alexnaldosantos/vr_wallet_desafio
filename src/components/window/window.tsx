@@ -14,34 +14,73 @@ interface WindowProps extends ViewProps {
   leftButton?: React.ReactNode;
   rightButton?: React.ReactNode;
   children?: React.ReactNode;
+  showWallpaper?: boolean;
 }
 
-export const Window: React.FC<WindowProps> = ({ children, title, leftButton: leftButton, rightButton, toolBarColor, color, titleColor, ...props }) => {
+export const Window: React.FC<WindowProps> = ({ children, title, leftButton: leftButton, rightButton, toolBarColor, color, titleColor, showWallpaper = true, ...props }) => {
   const isStringTitle = typeof title == 'string';
   const theme = useTheme();
   return (
-    <WindowContainer>
-      <WindowStyled color={color} {...props}>
-        <HeaderContainer color={toolBarColor}>
-          <ToolBarItemLeft>
-            {leftButton ? (leftButton) : null}
-          </ToolBarItemLeft >
-          <ToolBarItemCenter>
-            {isStringTitle ? <H3 color={titleColor || theme.toolbar.titleColor}>{(title)}</H3> : title}
-          </ToolBarItemCenter>
-          <ToolBarItemRight>
-            {rightButton ? (rightButton) : null}
-          </ToolBarItemRight>
-        </HeaderContainer>
-        {children}
-      </WindowStyled>
-    </WindowContainer>);
+    <SafeAreaContainer>
+      <WindowContainer>
+        <WindowStyled color={color} {...props}>
+          <HeaderContainer color={toolBarColor}>
+            <ToolBarItemLeft>
+              {leftButton ? (leftButton) : null}
+            </ToolBarItemLeft >
+            <ToolBarItemCenter>
+              {isStringTitle ? <H3 color={titleColor || theme.toolbar.titleColor}>{(title)}</H3> : title}
+            </ToolBarItemCenter>
+            <ToolBarItemRight>
+              {rightButton ? (rightButton) : null}
+            </ToolBarItemRight>
+          </HeaderContainer>
+          {children}
+        </WindowStyled>
+      </WindowContainer>
+      {showWallpaper ? <TopWindowWallpaper /> : null}
+      {showWallpaper ? <BottomWindowWallpaper /> : null}
+    </SafeAreaContainer>);
 };
 
 /* local style */
 
+export const SafeAreaContainer = styled.SafeAreaView`
+  flex: 1;
+`;
+
 export const WindowContainer = styled.SafeAreaView`
   flex: 1;
+  z-index: -100;
+`;
+
+export const TopWindowWallpaper = styled.View`
+  height: 235.27px;
+  width: 349.21px;
+  background-color: ${props => props.theme.colors.greyLight};
+  opacity: 0.2;
+  top: -80px;
+  left: -100px;
+  position: absolute;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transform: rotate(144.57deg);
+  z-index: -99;
+  pointer-events: none;
+`;
+export const BottomWindowWallpaper = styled.View`
+  height: 235.27px;
+  width: 349.21px;
+  background-color: ${props => props.theme.colors.greyLight};
+  opacity: 0.2;
+  bottom: -80px;
+  right: -100px;
+  position: absolute;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transform: rotate(144.57deg);
+  z-index: -99;
+  pointer-events: none;
 `;
 
 export const WindowStyled = styled(ViewStyled)`

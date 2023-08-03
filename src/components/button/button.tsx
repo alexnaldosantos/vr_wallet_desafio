@@ -4,6 +4,7 @@ import { ViewProps, Image, TouchableOpacity } from 'react-native';
 import { Colors } from "../../theme/colors";
 import { H5 } from "../text/text";
 import { useTheme } from '../../theme';
+import { ButtonStyled } from './styles';
 
 
 interface ButtonProps extends ViewProps {
@@ -32,8 +33,7 @@ export const Button: React.FC<ButtonProps> = ({ children, color, text, textColor
 
 /* local style */
 
-const ButtonContainer = styled.View<{ color?: keyof Colors | string, enabled?: boolean, minWidth?: string, maxWidth?: string }>`
-    background-color: ${props => props.enabled ? props.color || props.theme.button.color : props.theme.button.disabledColor};
+const ButtonContainer = styled(ButtonStyled) <{ minWidth?: string, maxWidth?: string }>`
     padding: 10px 20px 10px 20px;
     height: 55px;
     align-items: center;

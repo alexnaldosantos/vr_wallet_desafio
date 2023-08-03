@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { ViewStyled } from "../view/styles";
 import { ViewProps, Image, TouchableOpacity } from 'react-native';
 import { Colors } from "../../theme/colors";
+import { ButtonStyled } from './styles';
 
 interface ButtonBarProps extends ViewProps {
     color?: keyof Colors | string;
@@ -25,7 +25,7 @@ export const ButtonBar: React.FC<ButtonBarProps> = ({ children, icon, color, ico
 
 /* local style */
 
-const ButtonContainer = styled(ViewStyled)`
+const ButtonContainer = styled(ButtonStyled)`
     background-color: ${props => props.color || 'transparent'};
     width: 39px;
     height: 39px;
