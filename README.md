@@ -23,8 +23,7 @@ json-server --host 127.0.0.1 --watch db.json
 
 ```
 
-**Note** Os testes foram feitos no emulador do Android, que utiliza a porta 10.0.2.2 como alternativa ao localhost
-Para rodar no iOS, necessário alterar o arquivo src/data/api.ts
+**Note** Os testes foram feitos no emulador do Android, que utiliza a porta 10.0.2.2 como alternativa ao localhost. Para rodar no iOS, necessário alterar o arquivo src/data/api.ts
 
 ## Passo 1: Instalar os pacotes
 
