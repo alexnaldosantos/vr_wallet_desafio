@@ -21,16 +21,16 @@ json-server --watch db.json
 **Note** Os testes foram feitos no emulador do Android, que utiliza a porta 10.0.2.2 como alternativa ao localhost
 Verifique no arquivo src/data/api.ts
 
-## Passo 1: Inicie Metro Server
+## Passo 1: Instalar os pacotes
 
 No diretório principal do projeto execute:
 
 ```bash
 # using npm
-npm start
+npm install
 
 # OR using Yarn
-yarn start
+yarn install
 ```
 
 ## Passo 2: Rodar os testes unitários
